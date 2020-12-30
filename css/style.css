@@ -75,17 +75,14 @@ background:	#2F4F4F;
 	display: flex;
 	justify-content: space-around;
 	list-style: none;
-	
 }
+.menu ul li{ width:80%;}
 .menu ul li a{
 	color:black;
 	text-decoration: none;
 	font-size:1.6em;
 }
-/*
-.menu ul li a::after{content: "+"; padding-left: 5px;font-size: 18px;}
-.menu ul li:hover a::after{content: "-";}
-*/
+
 .logo{
 /*	background:#6BB4A1;*/
 	text-align: center;
@@ -319,3 +316,12 @@ background:	#2F4F4F;
 		
 }
 }
+@media screen and (max-width : 1600px) {
+	.menu ul{ right: 30%; width: 80%; }
+	.menu ul li {width:60%; padding: 0 auto;}
+	.menu ul li a {font-size:2.2em;}
+	.Logo { font-size: 3em; justify-content: center; }
+	.nav-menu ul { right:30%; padding-right: 100%;}
+	.nav-menu ul a { font-size:2.8em;}
+		
+} 
