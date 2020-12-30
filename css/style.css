@@ -97,8 +97,7 @@ background:	#2F4F4F;
 .nav-menu{
 /*	 position:absolute;*/
 /*     display: none;*/
-	width: 38px; height: 38px;
-	 top: 4px;padding-right:1000px;
+	 top: 4px;padding-right:100%;
 	 background:lightpink; border-radius: 30px;
 }
 .nav-menu a{
@@ -321,7 +320,7 @@ background:	#2F4F4F;
 	.menu ul li {width:60%; padding: 0 auto;}
 	.menu ul li a {font-size:2.2em;}
 	.Logo { font-size: 3em; justify-content: center; }
-	.nav-menu ul { margin-left:30%; padding-right: 100%;}
+	.nav-menu ul { margin-right:30%; padding-right: 100%;}
 	.nav-menu ul a { font-size:2.8em;}
 		
 } 
