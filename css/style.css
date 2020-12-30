@@ -158,7 +158,7 @@ background:	#2F4F4F;
 }  
 	.Homepage{
 		position: fixed;z-index: 6000;
-		right:10%; bottom:10%;display: block;
+		right:50px; bottom:50px;display: block;
 			
 }  
 		.Homepage a{
@@ -259,18 +259,7 @@ background:	#2F4F4F;
 		   background-blend-mode:saturation;background-color:darkorange;
 			}
  			 to { background-blend-mode:difference;background-color:grey; 
-			}
-}      
-
-
-
-
-	    #ConceptB{
-		position:absolute; width: 100%; height:800px;
-		background:	#2F4F4F;
-		overflow: hidden; display: flex;
-        justify-content:center;
-		align-items: center;		
+			}	
 }
 /*Mobie*/
 
@@ -314,11 +303,13 @@ background:	#2F4F4F;
 }
 }
 @media screen and (max-width : 1900px) {
-	.menu ul{  width: 80%; margin-left:30%; }
+	.header-main{ width:100%, padding: 0px 38px; height: 70px;}
+	}
+	.menu ul{  width: 80%; margin-right:360%; }
 	.menu ul li {width:60%; padding: 0 auto;}
 	.menu ul li a {font-size:2.5em;}
 	.Logo { font-size: 3em; justify-content: center; }
 	.nav-menu ul { margin-right:30%; padding-right: 100%;}
-	.nav-menu ul a { font-size: 3m;}
-		
+	.nav-menu ul a { font-size: 3em;}
+.Homepage{ font-size: 2.5em;right: 5%; bottom:5%; }	
 } 
