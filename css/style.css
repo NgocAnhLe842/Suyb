@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+   scroll-behavior: smooth;
+   font-family: 'Caveat', cursive;
+}
+::-webkit-scrollbar{ 
+    display: none; overflow: hidden;
+}
+#wrapper{
+	background-image: url("../image/9TQsy.png");
+	background-repeat: repeat;
+	background-size: contain;
+}
+header{ 
+background:	#2F4F4F;
+}
+.col-1{
+	width: 8.333%;
+}.col-2{
+	width: 16.667%;
+}.col-3{
+	width: 25%;
+}.col-4{
+	width: 33.333%;
+}.col-5{
+	width: 41.667%;
+}.col-6{
+	width: 50%;
+}.col-7{
+	width: 58.333%;
+}.col-8{
+	width: 66.667%;
+}.col-9{
+	width: 75%;
+}.col-10{
+	width: 83.333%
+}.col-11{
+	width: 91.667%
+}.col-12{
+	width:100%;
+}
+.header-main{
+	height:65px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 58px;
+	border-bottom: solid thin rgba(10,9,9,1.00);
+	overflow: hidden;
+}
+.container{
+	max-width:950px;
+	margin: 0 auto;
+}
+.container-fluid{
+	max-width: 100%;
+}
+.menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu ul{
+	position:absolute;
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	
+}
+.menu ul li a{
+	color:black;
+	text-decoration: none;
+	font-size:1.6em;
+}
+/*
+.menu ul li a::after{content: "+"; padding-left: 5px;font-size: 18px;}
+.menu ul li:hover a::after{content: "-";}
+*/
+.logo{
+/*	background:#6BB4A1;*/
+	text-align: center;
+	width: 90%;
+	height:20%;}
+.logo a{
+	font-family: 'Caveat', cursive;
+    color:white;
+	font-size: 2.5em;
+	padding-right:40%;
+}
+.nav-menu{
+/*	 position:absolute;*/
+/*     display: none;*/
+	width: 38px; height: 38px;
+	 top: 4px;padding-right:1000px;
+	 background:lightpink; border-radius: 30px;
+}
+.nav-menu a{
+	text-decoration: none;font-size: 2.4em;
+	-webkit-text-stroke:2px black;padding-left: 2px; 
+	color:white;
+}
+/*breakpoint*/
+/*Mobie*/
+@media screen and (max-width : 414px) {
+   /* Styles here */
+.header-main{
+	transition: all 1s;
+	height:66px;
+	padding: 0 10px;
+}
+	.menu ul{ 
+		width:80%;
+		padding-right:10px;
+		padding-left: 5px;
+		overflow: hidden;
+	}
+	.menu ul li a{
+       	font-size:1em;
+		color:black;
+		padding-right:500px;
+	} 
+	.logo a{
+    color:white;font-size: 2.5em;
+	padding-left:42px;
+}
+	.nav-menu{
+	transition: all 1s;
+	 margin-right:128%;
+     padding:0px;
+}
+	.nav-menu a{
+	transition: all 1s;
+	-webkit-text-stroke:2px black; font-size: 2.5em;
+} 	
+	.header-main:hover .logo a{
+		display: none;
+	}
+	.header-main:hover .nav-menu{
+		margin-right:10%;
+		padding-right: 374px;
+	}
+	.header-main:hover .menu ul li a{
+	     padding-right: 10px;
+	}
+}
+
+	/*breakpoint*/
+#section{
+		position:relative; width: 100%; height: 800px;
+		overflow:hidden;
+	    display: flex;
+        justify-content:center;
+		align-items: center;
+}  
+	.Homepage{
+		position: fixed;z-index: 6000;
+		right:10%; bottom:10%;display: block;
+			
+}  
+		.Homepage a{
+		 list-style: none; text-decoration: none;
+		-webkit-text-stroke:2px black; font-size: 2.5em;
+			color:lightcoral;border-radius: 50px; background-color:white;
+}
+         .Homepage a:hover{
+         animation-name: example;animation-duration: 1.5s;
+       } 	
+        @keyframes example {
+       from {color:black;
+			 background-color:lightpink;
+			}
+ 			 to {color:white;
+			background-color:black;
+			
+			}
+}
+    img{
+		position: absolute;padding: 5px;
+		top:80px; left:70px;background-size: cover; 
+		object-fit:contain;}
+
+	.layer{
+		position:absolute;
+		display: block; color:black;
+		font-family:'Architects Daughter'; font-size:5em;
+		
+} 
+		#ConceptA{
+		position:relative; width: 100%; height:800px;
+		background-image: url("../image/3010e997aba46ec4be39780981c1b972.jpg");
+		background-repeat: repeat;
+		background-size: contain;
+		overflow: hidden; display: flex;
+        justify-content:center;
+		align-items: center;
+}       
+	#ConceptA a{
+	font-family: 'Caveat', cursive;
+	font-size:10em;
+	position: absolute;
+	color:White; top:20px;
+	animation-name: example2;
+	animation-duration:3s;
+	 animation-direction: alternate-reverse;
+	animation-iteration-count: infinite; 
+} 	
+        @keyframes example2 {
+       from {color:lightpink; 
+		   -webkit-text-stroke:3px black;
+			}
+ 			 to {color:white; 
+				 background-blend-mode:multiply;
+				 -webkit-text-stroke:3px black;
+			}
+}      
+	    #ConceptB{
+		position:absolute; width: 100%; height:800px;
+		background:	#2F4F4F;
+		overflow: hidden; display: flex;
+        justify-content:center;
+		align-items: center;		
+} 
+#mb {
+	display:none;
+}       
+
+		#ConceptC{
+		position:relative; width: 100%; height:800px;
+		overflow: hidden; display: flex;
+		background-image: url("../image/partent.png"), url("../image/9f1b0809c6173b2e6effe1fcfe1aad4c.png");
+		background-color:snow;
+		background-repeat: repeat , no-repeat;
+		background-size: 500px auto, 420px auto;
+		background-position: center , right;
+		background-blend-mode:darken;
+        justify-content:center;
+		align-items: center;
+}
+        #ConceptC a{
+	font-family: 'Caveat', cursive;
+	font-size: 8em;
+	position: absolute;
+}       
+
+	#ConceptC{
+		animation-name:example3;
+	    animation-duration:3s;
+		animation-delay: -2s;
+	    animation-direction: alternate-reverse;
+	    animation-iteration-count: infinite; 
+}   
+		
+		  @keyframes example3 {
+          from {
+		   background-blend-mode:saturation;background-color:darkorange;
+			}
+ 			 to { background-blend-mode:difference;background-color:grey; 
+			}
+}      
+
+
+
+
+	    #ConceptB{
+		position:absolute; width: 100%; height:800px;
+		background:	#2F4F4F;
+		overflow: hidden; display: flex;
+        justify-content:center;
+		align-items: center;		
+}
+/*Mobie*/
+
+@media screen and (max-width : 414px) {
+   /* Styles here */
+	#section{ 
+     display:none;
+	}  
+	#section img{display:none;}
+/*	#section .Homepage{display:none;}*/
+	#section .Layer{display:none;}
+ 	#mb{
+ 	 	position:relative;
+		width: 414px; height:736px;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+	}
+	
+	.Homepage{
+		position: fixed;z-index:1500;
+		top:696px;
+		left:260px;display: block;
+	}
+	.Homepage a{
+		-webkit-text-stroke:1px black; font-size: 2em;
+}      
+	
+	#mb img{
+		position: absolute;
+		padding:5px;
+		top:20px; left:50px;background-size: cover; 
+		object-fit:cover;
+	}
+
+	.layermb{
+		position:absolute;
+		display: block; color:black;
+		font-family:'Architects Daughter'; font-size:2em;
+		
+}
+}
